@@ -1,0 +1,424 @@
+body{
+    font: 100%/125% “Times New Roman”, sans-serif; 
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0px;
+    background-color: #f1f2f6;
+}
+*{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    color: auto;
+    font-family: Arial;
+
+}
+    /* font: <font-size>, <font-family>;  */
+    #wrapper{
+        margin: 10px;
+        padding: 0px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: #f1f2f6;
+    }
+
+
+
+
+    /* ------------ HEADER ------------------------------------ */
+    #header {
+        background-color: #f1f2f6;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-width: 5px;
+        border-bottom-width: 5px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-top-color: #00a8ff;
+        border-bottom-color: #00a8ff;
+        height: 100px;
+        width: 100%;
+    }
+        /* Văn bản bên trong header: */
+        #header p{
+            color: darkblue;
+            font-family: Chalkduster;
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        #header img{
+            font-family: Chalkduster;
+            font-size: 2rem;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+
+
+
+/* -----------------  MENU ------------------------------------------ */
+    .nav{
+        background-color: #1e272e;
+        display: flex;
+        height: 50px;
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+    .menu li a {
+      color: white;
+      display: block;
+      padding: 13.7px 50px;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    .menu li:hover{
+      background-color: black;
+    }
+    .menu li a:hover{
+      color: #00a8ff;
+    }
+    .menu li.active a{
+      background-color: black;
+      color: #00a8ff;
+      border-bottom: 2.5px solid #00a8ff;
+    }
+  
+
+
+/* ------------------ MAIN ---------------------------------------------- */
+    #main{
+        background-color: #f1f2f6;
+        width: 100%;
+        height: 500;
+        display:flex;
+    }
+
+
+
+/* ----------------- SLIDE SHOW TRANG CHU ---------------------------- */
+    .slideshow-container {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      margin-left: 25px;
+      margin-left: 25px;
+        
+      }
+      /* Hide the images by default */
+      .mySlides {
+        display: block;
+      } 
+      .mySlides img{
+        width: 90%;
+        margin-top: 35px;
+        margin-left: 33px;
+        height: 450px;
+      
+      }
+      /* Next & previous buttons */
+       .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 15px;
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0px 3px 3px 0px;
+        user-select: all;
+      } 
+      /* Position the "next button" to the right */
+      .next {
+        right: 75;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev {
+        left: 33;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+       .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      } 
+      .active {
+        background-color: #717171;
+      }
+       
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 3s;
+      } 
+
+
+
+
+/* --------------------------DANH SACH THANH VIEN--------------------------   */
+#left{
+  width: 25%;
+  float:left;
+}
+  #left h1{
+      background-color: #00a8ff;
+      margin: 0px auto;
+      height: 30px;
+      width: 70%;
+      text-align: center;
+      line-height: 30px;
+      color: black;
+      margin-top: 10px;
+      border-radius: 10px;
+      font-size: large;
+      font-family: 'Times New Roman', Times, serif;
+  }
+    .tabs{
+        background-color: no;
+        width: 50%;
+        padding-top: 10;
+        padding-bottom: 10;
+        margin-left: 50;
+        margin-top: 10;
+        padding-left: 25;
+        padding-right: 25;
+        list-style-type: none;
+    }
+    .tab-item{
+        padding-top: 10;
+        padding-bottom: 10;
+        text-align: center;
+        border-bottom: 1px solid rgb(198, 191, 205);
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+    }
+    .tab-item:hover {
+        /* border-bottom: 1.5px solid #00a8ff; */
+        cursor: pointer;
+        color:  #00a8ff;
+
+    }
+    .tab-item.active {
+        opacity: 1;
+        color: #00a8ff;
+        background-color: #f1f2f6;
+        border-bottom: 1.5px solid #00a8ff;
+      }
+    #left li a{
+       color: black;  
+       font-family: 'Times New Roman', Times, serif;
+       text-align: center;
+    }
+    #left li a:hover{
+        color: black;  
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+     }
+    
+
+
+
+/* ---------------------- THONG TIN THANH VIEN -------------------------------------- */
+#right {
+    float: right;
+    width: 74%;
+    border-left: 1px solid #778ca3;
+    height: 500px;
+}
+  .noidung {
+    background-color: #dfe4ea;
+    height: 470px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0px auto;
+  }
+  .thongtin img {
+    width: 120px;
+    height: 120px;
+    margin-left: 290px;
+}
+    .thongtin {
+      display: none;
+      height: 0px;
+      margin-top: 10px;
+      background-color: #778ca3;
+    }
+    .thongtin.active{
+      display: block;
+      background-color: #778ca3;
+    }
+    .thongtin h2{
+      background-color:  #00a8ff;
+      color: black;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      margin: 0px auto;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-size: large;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .thongtin p {
+      background-color: no;
+      color: black;
+      height: 30px;
+      text-align: left;
+      line-height: 30px;
+      margin-top: 15px;
+      margin-left: 255px;
+      width: auto;
+      font-size: medium;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: large;
+    }
+    
+
+
+
+
+
+
+ /* ------------------------ LOGO ----------------------     */
+.box {
+    float: left;
+    background-color: no;
+    border-radius: 8px;
+    height: 100px;
+    width: 10%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+  .box img{
+margin-left: 20px;
+margin-top: -30px;
+z-index: 999;
+cursor: pointer;
+}
+
+
+/* -------------------------QUAN LI------------------------------- */
+#quanLi{
+  width: 90%;
+  background-color: #dfe4ea;
+  margin: 0px auto;
+  margin-top: 30px;
+  height: 450px;
+  border-radius: 10px;
+
+  
+}
+#quanLi h2{
+  text-align: center;
+  color: black;
+  background-color: #00a8ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#quanLi table{
+  width: 90%;
+  height: 350px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  font-size: medium;
+}
+#quanLi table tr td {
+  text-align: center;
+  color: #000;
+  width: 60px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#quanLi table th{
+  text-align: center;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  /* background-color: #718093; */
+}
+#quanLi table tr:hover{
+  background-color:#ced6e0;
+}
+
+
+/* ------------------- LIEN HE ----------------------------------- */
+    .lienhe{
+      width: 90%;
+      background-color: #dfe4ea;
+      margin: 0px auto;
+      margin-top: 30px;
+      height: 450px;
+      border-radius: 10px;
+    }
+    .lienhe h2{
+      text-align: center;
+      color: black;
+      background-color: #00a8ff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      height: 30px;
+      line-height: 30px;
+      font-size: large;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .lienhe table{
+      width: 90%;
+      height: 350;
+      margin: auto;
+      margin-top: 30px;
+    }
+    .lienhe table tr td{
+      text-align: center;
+      color: #000;
+      width: 60px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .lienhe table th{
+      text-align: center;
+      color: #000;
+      font-family: 'Times New Roman', Times, serif;
+      /* background-color: #718093; */
+    }
+    .lienhe table tr:hover{
+      background-color:#ced6e0;
+    }
+            
+
+
+/* ----------------------- FOOTER -------------------- */
+#footer {
+  clear: both;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: lightgrey;
+  border-radius: 6px;
+}
+  /* Văn bản bên trong header: */
+  #footer p{
+      font-size: 10pt;
+      font-style: italic;
+      color: blue;
+      padding: 3px;
+  }
